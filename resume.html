@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: rgb(222, 220, 220);
+        }
+        *{
+            margin:0px;
+        }
+        #container{
+            width:1000px;
+            height:1000px;
+            border:5px solid;
+            margin-left: 250px;
+            display:flex;
+        }
+        #left-side{
+            width:350px;
+            height:1000px;
+            background-color: darkblue;
+        }
+        #right-side{
+            width:650px;
+            height:1000px;
+            background-color: rgb(179, 175, 175);
+        }
+        #section{
+            width:100%;
+            height:200px;    
+        }
+        #image-area{
+            height:250px;
+            width:100%;
+            background-image: linear-gradient(145deg, rgb(42, 42, 239) 50%, black 50%);
+        }
+        #left-section1, #left-section2{
+            width:100%;
+            height:375px;
+            background-color: black;    
+            color:white;
+        }
+        h{
+            font-size: 30px;
+        }
+        #face{
+            width:200px;
+            height:200px;
+            background-color: gray;
+            margin-left: 75px;
+            border-radius: 100px;    
+        }
+        #names{
+            font-size: 25px;
+        }
+         #names, #me{
+            margin-left: 40px;
+        }
+        #left-header1, #left-header2{
+            width:300px;
+            height:35px;
+            border-top:2px solid white;
+            border-bottom:2px solid white;
+            margin-left: 25px;    
+            color:white;
+        }   
+        #right-headers{
+            width:600px;
+            height:35px;
+            margin-top:5px;
+            margin-left: 25px;
+            border-top: 5px solid gray;
+            border-bottom: 5px solid gray;
+            
+        }
+        #myname{
+            width:250px;
+            height:35px;
+            border-top:2px solid white;
+            border-bottom:2px solid white;
+            margin-left:50px;
+            text-align: center;
+            color:white;
+            margin-top:11px;
+        }
+        #ownname{
+            font-size:25px;
+            color:white;
+        }
+        #descriptions{
+            margin-left: 25px;
+            width:610px;
+        }
+        #left-side-info{
+            margin-top: 8px;
+            width:250px;
+            height: 130px;
+            border-right:5px solid gray;
+            position:absolute
+        }
+        #right-side-info{
+            margin-top:7px;
+            width:380px;
+            height:130px;
+            position:relative;
+            margin-left:260px;   
+        }
+        #left-side-bullets{
+            margin-top:40px;
+            width:250px;
+            height:70px;
+            position: absolute;
+        }
+        #right-side-bullets{
+            margin-top:40px;
+            width:380px;
+            height:70px;
+            position: relative;
+            margin-left:260px;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li::before{
+            content: "\2022";
+            color:rgb(42, 42, 239);
+            margin-right:10px;
+        }     
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left-side">
+            <div id="image-area">
+                <div id="face">
+                    <img src="pikapfp.png">               
+                </div>           
+                <div id="myname">
+                    <p id="ownname"><b>Adrian Delgado</b></p>
+                </div>
+            </div>
+            <div id="left-section1">
+                <br>
+                <br>
+                <br>
+                <div id="left-header1">
+                <h>Info</h>
+                </div>
+                <br>
+                <br>
+                <p id="names">Address</p>
+                <p id="me">9034 W Whyman Ave</p>
+                <br>
+                <p id="names">Phone</p>
+                <p id="me">(623) 824-1624</p>
+                <br>
+                <p id="names">Email</p>
+                <P id="me">adelga289@west-mec.org</P>
+                <br>
+            </div>
+            <div id="left-section2">
+                <div id="left-header2">
+                <h>Socials</h>
+                </div>
+                <br>
+                <br>
+                
+                <p id="names">Twitter</p>
+                <p id="me">Adrian_Delgado</p>
+                <br>
+                <p id="names">Linkdin</p>
+                <p id="me">Adrian_Delgado</p>
+                <br>
+                <p id="names">Facebook</p>
+                <p id="me">Adrian_Delgado</p>
+                <br>
+                <p id="names">Slack</p>
+                <P id="me">Adrian_Delgado</P>
+            </div>
+        </div>
+        <div id="right-side">
+            <div id="section">
+                <div id="right-headers">
+                <h>About Me</h>
+                </div>
+                <br>
+                <p id="descriptions">My name is Adrian Delgado and Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rerum nihil esse eum? Voluptates, voluptas temporibus consequatur voluptatem inventore perferendis repudiandae, magni facere iure quis molestias laboriosam! Tenetur, veritatis mollitia.</p>
+            </div>
+            <div id="section">
+                <div id="right-headers">
+                <h>Work Experience</h>
+                </div>
+                <div id="left-side-info">
+                <p id="descriptions">Harkins Theaters</p>
+                <P id="descriptions">2022 May-July</P>
+                <br>
+                <br>
+                </div>
+                <div id="right-side-info">
+                    <p>My first Job and I enjoyed it very much. I was just a team member and I feel as if I can still smell the popcorn.</p>
+                </div>
+            </div>
+            <div id="section">
+                <div id="right-headers">
+                <h>Education</h>
+                </div>                
+                <div id="left-side-info">
+                <p id="descriptions">Tolleson Union High School</p>
+                <p id="descriptions">2020-2024</p>
+                <br>
+                <br>     
+                <p id="descriptions">West-MEC</p>
+                <p id="descriptions">2022-2024</p>
+                </div>
+                <div id="right-side-info">
+                    <P>Normal High School I do not like very much but apparently I need to go to one in order to have a better chance at a job.</P>
+                    <br>         
+                    <p>Great school I enjoy going to because I actually get to learn about stuff that I like.</p>
+                </div>
+            </div>
+            <div id="section">
+                <div id="right-headers">
+                <h>Skills</h>
+                </div>
+                <div id="left-side-bullets">
+                    <p id="descriptions">
+                        <ul>
+                            <li>Teamwork</li>
+                            <li>Communication Skills</li>
+                            <li>Time managment</li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="right-side-bullets">
+                    <p id="descriptions">
+                        <ul>
+                            <li>Organizational Skills</li>
+                            <li>Mathematics</li>
+                            <li>Foreign Language</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div id="section">
+                <div id="right-headers">
+                    <h>Accomplishments</h>
+                </div>
+                <br>
+                <p id="descriptions">I have not accmoplished anything important or worth mentioning .. yet.</p>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
